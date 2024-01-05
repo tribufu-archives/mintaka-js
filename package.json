@@ -1,6 +1,6 @@
 {
     "name": "@tribufu/mintaka",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Mintaka JS",
     "repository": "https://github.com/Tribufu/MintakaJs",
     "author": "Tribufu <contact@Tribufu.com>",
@@ -23,7 +23,9 @@
         "json-bigint": "^1.0.0",
         "jsonwebtoken": "^9.0.2",
         "snakecase-keys": "^5.5.0",
-        "uuid": "^9.0.1"
+        "toml": "^3.0.0",
+        "uuid": "^9.0.1",
+        "uuidv7": "^0.6.3"
     },
     "devDependencies": {
         "@types/dotenv": "^8.2.0",
