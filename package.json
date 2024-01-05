@@ -28,7 +28,6 @@
         "uuidv7": "^0.6.3"
     },
     "devDependencies": {
-        "@types/dotenv": "^8.2.0",
         "@types/json-bigint": "^1.0.4",
         "@types/jsonwebtoken": "^9.0.5",
         "@types/node": "^20.10.6",
