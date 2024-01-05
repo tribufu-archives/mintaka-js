@@ -33,6 +33,7 @@ import {
 } from "./jwt";
 
 import {
+    JsonCasing,
     JsonSerializer,
 } from "./json";
 
@@ -62,6 +63,7 @@ export {
     HttpCookies,
     HttpHeaderMap,
     HttpHeaders,
+    JsonCasing,
     JsonSerializer,
     JwtDecoder,
     MINTAKA_VERSION,
