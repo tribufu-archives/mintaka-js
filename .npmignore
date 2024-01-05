@@ -1,0 +1,7 @@
+examples/
+node_modules/
+
+.editorconfig
+.env.example
+.gitattributes
+.gitignore
