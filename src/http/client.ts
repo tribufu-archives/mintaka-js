@@ -52,7 +52,7 @@ export class HttpClient {
                 console.log(`(${this.options.logTarget}) ${req.method?.toUpperCase()} ${req.baseURL}${req.url}`);
             }
 
-            if (req.url && req.url.includes("oauth2")) {
+            if (req.url && req.url.includes("oauth2") && !req.url.includes("userinfo")) {
                 return req;
             }
 
@@ -65,7 +65,7 @@ export class HttpClient {
         });
 
         inner.interceptors.response.use((res) => {
-            if (res.config.url && res.config.url.includes("oauth2")) {
+            if (res.config.url && res.config.url.includes("oauth2") && !res.config.url.includes("userinfo")) {
                 return res;
             }
 
