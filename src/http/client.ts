@@ -53,7 +53,7 @@ export class HttpClient {
             }
 
             const contentType = req.headers["Content-Type"];
-            if (req.data && (contentType === "application/json" || contentType === "application/x-www-form-urlencoded")) {
+            if (req.data && contentType === "application/json") {
                 req.data = JsonSerializer.toCase(req.data, this.options.jsonRequestCasing);
             }
 
