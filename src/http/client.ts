@@ -52,8 +52,12 @@ export class HttpClient {
                 console.log(`(${this.options.logTarget}) ${req.method?.toUpperCase()} ${req.baseURL}${req.url}`);
             }
 
+            if (req.url && req.url.includes("oauth2")) {
+                return req;
+            }
+
             const contentType = req.headers["Content-Type"];
-            if (req.data && contentType === "application/json") {
+            if (req.data && (contentType === "application/json" || contentType === "application/x-www-form-urlencoded")) {
                 req.data = JsonSerializer.toCase(req.data, this.options.jsonRequestCasing);
             }
 
@@ -61,6 +65,10 @@ export class HttpClient {
         });
 
         inner.interceptors.response.use((res) => {
+            if (res.config.url && res.config.url.includes("oauth2")) {
+                return res;
+            }
+
             if (res.data) {
                 res.data = JsonSerializer.toCase(res.data, this.options.jsonResponseCasing);
             }
