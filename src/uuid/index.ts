@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 import { v1 as uuidv1, v4 as uuidv4 } from "uuid";
 import { uuidv7 } from "uuidv7";

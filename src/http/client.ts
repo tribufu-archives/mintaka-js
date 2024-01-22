@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 import axios, { AxiosInstance } from "axios";
 import { JsonCasing, JsonSerializer } from "../json";

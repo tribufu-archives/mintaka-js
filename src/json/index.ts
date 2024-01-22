@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 import camelcaseKeys from "camelcase-keys";
 import snakecaseKeys from "snakecase-keys";

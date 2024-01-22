@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 import { RawStringMap, StringMap } from "../collections/string_map";
 
