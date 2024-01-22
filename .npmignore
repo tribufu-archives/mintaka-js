@@ -6,4 +6,5 @@ src/
 .editorconfig
 .gitattributes
 .gitignore
-bootstrap.*
+bootstrap.ps1
+bootstrap.sh
